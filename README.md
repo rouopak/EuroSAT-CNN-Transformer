@@ -104,7 +104,9 @@ Fully Connected Layer
 | Embedding dimension | 32 |
 | Feed-forward dimension | 128 |
 | Dropout | 0.1 |
+
 Difference Between the Paper and GitHub Implementation
+
 The accompanying GitHub implementation does not completely match the architecture and training configuration described in the paper.
 For example, the GitHub implementation uses:
 - One Transformer block
