@@ -118,11 +118,14 @@ while the paper specifies:
 The paper also discusses feature fusion and an attention mechanism, but does not provide enough architectural details to reproduce those components exactly.
 Therefore, this project does not claim that an independently designed fusion/attention implementation is an exact reproduction of the paper.
 The implemented model follows the architecture that is explicitly specified.
+
 Results
 Validation Performance
 Best validation accuracy: 94.42%
 Best epoch: 99
+
 Test Performance
+
 | Metric | Result |
 |---|---:|
 | Test Accuracy | **94.37%** |
@@ -132,7 +135,9 @@ Test Performance
 | Macro F1 | **94.16%** |
 | Weighted F1 | **94.34%** |
 | Test Samples | **4,050** |
+
 Visualizations
+
 The notebook contains the following visualizations:
 Training Curves
 - Training accuracy vs. validation accuracy
@@ -144,7 +149,9 @@ Explainability
 - Grad-CAM visualization
 - Transformer token-importance visualization
 Note: The Transformer visualization is a gradient-based token-importance visualization. It is not presented as a direct visualization of the Transformer's internal attention weights.
+
 Comparison With the Paper
+
 The paper reports a final accuracy of:
 98.36%
 The implementation in this repository achieved:
@@ -157,3 +164,11 @@ There are several differences and ambiguities between the paper and the provided
 - Incomplete architectural details for feature fusion and attention
 - Incorrect dataset splitting in the original GitHub implementation
 The 94.37% result represents the explicitly specified CNN + Transformer architecture evaluated using a corrected 70/15/15 dataset split.
+
+References
+Paper
+Hybrid deep learning for satellite image classification: Integrating CNN and transformer architectures
+Dataset
+EuroSAT RGB Dataset
+Original Implementation
+The GitHub implementation provided alongside the paper was used as the starting point for reproducing and auditing the workflow.
